@@ -19,3 +19,10 @@ Lukas Bystricky
 
 ## Page Description
 The above folders contain the lecture notes and assignments, updated periodically throughout the semester (notes too far in the future may be incomplete). Inside each folder you will find a description of the contents.
+
+The lectures are all Jupyter (or IPython) Notebooks. GitHub can render 
+most of the notebooks, however there are certain cells that it does not 
+render properly. To view the complete notebooks you can download them 
+and open them in Jupyter. Alternatively, you can view the lectures in 
+their intended slideshow format 
+[here](https://nbviewer.jupyter.org/github/lukasbystricky/ISC-3313/tree/master/lectures/).
