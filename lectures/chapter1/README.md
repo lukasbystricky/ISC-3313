@@ -11,7 +11,7 @@
 
 ## 2-Cornerstones
 
-*largely follows chapter 1 in Goldwasser and Letscher*
+*Largely follows chapter 1 in Goldwasser and Letscher*
 
 - data and types
 - functions
