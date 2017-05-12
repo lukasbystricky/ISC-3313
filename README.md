@@ -1,6 +1,8 @@
 # ISC 3313
 # Introduction to Scientific Computing
 
+### Department of Scientific Computing, Florida State University
+
 ## Course Information
 **Time**: 11:00 am - 12:15 pm
 
