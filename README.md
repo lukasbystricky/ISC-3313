@@ -1,5 +1,5 @@
 # ISC 3313
-# Introduction to Scientific Computing
+# Introduction to Scientific Computing Using Python
 
 ### Department of Scientific Computing, Florida State University
 
