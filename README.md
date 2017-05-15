@@ -13,7 +13,7 @@
 ## Instructor Information
 Lukas Bystricky
 
-**Webpage**: www.sc.fsu.edu/people/~lb13f 
+**Webpage**: http://people.sc.fsu.edu/~lb13f/
 
 **e-mail**: lb13f@my.fsu.edu
 
