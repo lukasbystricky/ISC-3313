@@ -33,7 +33,6 @@
 
 - built-in functions
 - Math module
-- SymPy module
 - NumPy module
 
 ## 6-Numerical Calculus
