@@ -34,8 +34,3 @@
 - built-in functions
 - Math module
 - NumPy module
-
-## 6-Numerical Calculus
-
-- finite difference method
-- Riemann sums
