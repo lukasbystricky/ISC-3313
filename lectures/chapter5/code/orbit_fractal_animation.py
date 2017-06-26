@@ -22,11 +22,12 @@ ax.set_ylim((min(y) - 0.1, max(y) + 0.1))
 
 data_line, = ax.plot(x[0],y[0])
 ax.set_title("t = %4d" % 0)
+ax.set_aspect('equal')
 
 # define update function
-def update_frame(i):
+def update_frame(i, x, y):
 	data_line.set_data(x[:i], y[:i])
 	ax.set_title("t = %4d" % i)
 	
-anim = FuncAnimation(fig, update_frame, frames = np.arange(0,N,10))
+anim = FuncAnimation(fig, update_frame, frames = np.arange(0,N,10), fargs=(x,y))
 anim.save("orbit_fractal.gif", writer="imagemagick", fps=30)
