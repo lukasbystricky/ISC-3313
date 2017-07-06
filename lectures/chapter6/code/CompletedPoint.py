@@ -1,3 +1,5 @@
+import numpy as np
+
 class Point:
     """ 
     A class that represents a point (x,y) in a 2D plane. 
@@ -71,18 +73,17 @@ class Point:
         d [float] : distance between this point and other point
         """
         
-        import numpy as np
         dx = self._x - other._x
         dy = self._y - other._y
-    
+
         return np.sqrt(dx**2 + dy**2)
 
-def normalize(self):
-    """
-    Scales the point to have unit length from origin
-    """
-    
-    mag = self.distance(Point()) # compute the distance from point to the origin
-    if mag > 0:
-        # if the magnitude is not 0, scale by 1 over magnitude
-        self.scale(1/mag)
+    def normalize(self):
+        """
+        Scales the point to have unit length from origin
+        """
+        
+        mag = self.distance(Point()) # compute the distance from point to the origin
+        if mag > 0:
+            # if the magnitude is not 0, scale by 1 over magnitude
+            self.scale(1/mag)
