@@ -87,3 +87,28 @@ class Point:
         if mag > 0:
             # if the magnitude is not 0, scale by 1 over magnitude
             self.scale(1/mag)
+            
+    def __add__(self, other):
+        
+        return Point(self.x + other.x, self.y + other.y)
+        
+    def __sub__(self, other):
+        
+        return Point(self.x - other.x, self.y - other.y)
+        
+    def __neg__(self):
+        
+        return Point(-self.x, -self.y)
+        
+    def __abs__(self):
+        
+        return self.distance(Point())
+        
+    def __eq__(self, other):
+        
+        return self.x == other.x and self.y == other.y
+        
+    def __str__(self):
+        
+        return "(" + str(self.x) + "," + str(self.y) + ")"
+        
