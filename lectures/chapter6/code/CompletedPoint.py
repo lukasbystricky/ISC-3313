@@ -87,28 +87,47 @@ class Point:
         if mag > 0:
             # if the magnitude is not 0, scale by 1 over magnitude
             self.scale(1/mag)
-            
+     
+    ####################################################################
+    # SOLUTIONS TO IN CLASS EXERCISE
+    ####################################################################
     def __add__(self, other):
+        """ Adds a Point to this one """
         
-        return Point(self.x + other.x, self.y + other.y)
+        return Point(self._x + other._x, self._y + other._y)
         
     def __sub__(self, other):
+        """ Subtracts a Point from this one """
         
-        return Point(self.x - other.x, self.y - other.y)
+        return Point(self._x - other._x, self._y - other._y)
         
     def __neg__(self):
+        """ 
+        Returns the negative of this Point - i.e returns a new Point
+        with coordinates (-_x, -_y)
+        """
         
-        return Point(-self.x, -self.y)
+        return Point(-self._x, -self._y)
         
     def __abs__(self):
+        """ 
+        Returns the magnitude of the Point, i.e. the distance from 
+        the origin
+        """
         
         return self.distance(Point())
         
     def __eq__(self, other):
-        
-        return self.x == other.x and self.y == other.y
+        """
+        Tests if a Point is equal to this one, i.e if another point has 
+        both the same x and y coordinates
+        """
+        return self._x == other._x and self._y == other._y
         
     def __str__(self):
+        """
+        Returns a string representation of this Point
+        """
         
-        return "(" + str(self.x) + "," + str(self.y) + ")"
+        return "(" + str(self._x) + "," + str(self._y) + ")"
         
